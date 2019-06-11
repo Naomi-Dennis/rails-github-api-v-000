@@ -17,7 +17,7 @@ RSpec.configure do |config|
       to_return(:status => 200, :body => [{"name" => "Repo 1", "html_url" => "http://link1.com"}, {"name" => "Repo 2", "html_url" => "http://link2.com"}, {"name" => "Repo 3", "html_url" => "http://link3.com"}].to_json, :headers => {})
 
     
-       stub_request(:post, "https://github.com/login/oauth/access_token?client_id=7996e3905f117c80b58d&client_secret=0a7ef2d060947dfecad97e6997ff27341f8dc3f9&code=20").
+   stub_request(:post, "https://github.com/login/oauth/access_token?client_id=7996e3905f117c80b58d&client_secret=0a7ef2d060947dfecad97e6997ff27341f8dc3f9&code=20").
          with(
            headers: {
           'Accept'=>'*/*',
